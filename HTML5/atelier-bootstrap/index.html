@@ -5,9 +5,104 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width"/>
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+        <style type="text/css">
+            .jumbotron {
+                background: url("images/featured.jpg") no-repeat scroll center bottom / cover rgba(0, 0, 0, 0);
+                color: #FFFFFF;
+                margin-top: 40px;
+            }
+            .jumbotron p {
+                color: #e7e7e7;
+            }
+        </style>
     </head>
     <body>
-        <div>Document HTML</div>
+        <nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Sushi Bar</a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                          <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                          <li><a href="#"><span class="glyphicon glyphicon-star"></span> Les menus</a></li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> A propos<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Le restaurant</a></li>
+                              <li><a href="#">Nous contacter</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Rechercher un plat ...">
+                          </div>
+                          <button type="submit" class="btn btn-default">Rechercher</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#"><span class="glyphicon glyphicon-asterisk"></span> Les plats</a></li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> Votre commande<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Confirmer</a></li>
+                              <li><a href="#">Annuler</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+        </nav>
+        
+        <div>
+            <div class="jumbotron">
+                <h1>Sushi à Emporter</h1>
+                <p>Redécouvrez les couleurs de la fraicheur.</p>
+                <a class="btn btn-primary btn-lg">Commandez !</a>
+            </div>
+        </div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="#"><img class="img-responsive img-circle" src="images/sushi.jpg"></a>
+              <h3 class="text-center">Sushi</h3>
+              <p>Composé d'une fine tranche de poisson frais posée sur un canapé de riz vinaigré.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis. 
+                    Mauris id turpis diam. Ut pellentesque justo dolor, nec eleifend mauris euismod vitae. Morbi diam est, 
+                    ornare non felis sit amet, elementum ultricies ante. Mauris id condimentum mauris. Nunc eleifend et enim eu sagittis. 
+                    In congue, sapien nec vulputate pulvinar, tellus leo porttitor nibh, at rhoncus tellus lacus ac metus. Vestibulum pharetra 
+                    scelerisque est sed tincidunt. Ut congue, quam a molestie luctus, quam orci congue erat, laoreet interdum lectus justo ac urna.</p>
+              <a href="#" class="btn btn-success">À partir de 5,99 €</a>
+            </div>
+ 
+            <div class="col-md-4">
+              <a href="#"><img class="img-responsive img-circle" src="images/maki.jpg"></a>
+              <h3 class="text-center">Maki</h3>
+              <p>Composé de riz et d'une garniture au choix enveloppés dans une feuille d'algue de Nori.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis. 
+                    Mauris id turpis diam. Ut pellentesque justo dolor, nec eleifend mauris euismod vitae. Morbi diam est, 
+                    ornare non felis sit amet, elementum ultricies ante. Mauris id condimentum mauris. Nunc eleifend et enim eu sagittis. 
+                    In congue, sapien nec vulputate pulvinar, tellus leo porttitor nibh, at rhoncus tellus lacus ac metus. Vestibulum pharetra 
+                    scelerisque est sed tincidunt. Ut congue, quam a molestie luctus, quam orci congue erat, laoreet interdum lectus justo ac urna.</p>
+              <a href="#" class="btn btn-danger">À partir de 8,99 €</a>
+            </div>
+ 
+            <div class="col-md-4">
+              <a href="#"><img class="img-responsive img-circle" src="images/sashimi.jpg"></a>
+              <h3 class="text-center">Sashimi</h3>
+              <p>Fines tranches de poisson cru de premier choix pour en apprécier toute la saveur.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis. 
+                    Mauris id turpis diam. Ut pellentesque justo dolor, nec eleifend mauris euismod vitae. Morbi diam est, 
+                    ornare non felis sit amet, elementum ultricies ante. Mauris id condimentum mauris. Nunc eleifend et enim eu sagittis. 
+                    In congue, sapien nec vulputate pulvinar, tellus leo porttitor nibh, at rhoncus tellus lacus ac metus. Vestibulum pharetra 
+                    scelerisque est sed tincidunt. Ut congue, quam a molestie luctus, quam orci congue erat, laoreet interdum lectus justo ac urna.</p>
+              <a href="#" class="btn btn-info">À partir de 10,99 €</a>
+            </div>
+          </div>
+        </div>
         
         <script src="//code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
